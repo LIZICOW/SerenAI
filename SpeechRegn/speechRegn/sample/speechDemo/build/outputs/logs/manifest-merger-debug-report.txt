@@ -1,0 +1,326 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\3284ae09c1513edd44ae4c8d8e9b9128\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\15389\.gradle\caches\transforms-3\ea1662c32d3ff65527ec492dacf54091\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\58746da80968fd4fa14f0a407845c6a3\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\d1c6f7d3c9e151b51d1258ebf5b70d0c\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\a14204dd974ad58e11bf5db1b38560e8\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\b81baf2f64af89e48503ace4a0d48ea4\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\35a9d0aae831ee659c735494fede0143\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\15389\.gradle\caches\transforms-3\a44aaa7d5c8fa8ef4de48d9671cd78db\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\15389\.gradle\caches\transforms-3\a0a79cfc7fccdcc5bcc375017b2a33cf\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\15389\.gradle\caches\transforms-3\a428acea1e53785af0d13a3b2477c96d\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\15389\.gradle\caches\transforms-3\7dad3e04c3ff829dd25f99340f97f47d\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\e5d23626b6001b7aa096f6179bfcc35a\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\263583e125cdd770a6e88249722a6251\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\1c9e49e2cba303014bc395e1182205cc\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\70b28b4a540938fcb3fdb167a2c9f2e1\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\f6a8f907c15f2c182d513015ffb56533\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\9b8330d8b605d4604cdbf435cb850e5a\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\39982f681787b6f75f5d172eb41d4694\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\cff220987cec5d32bdcc0c08c1f83fe2\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\a19c4fd82661b56f245e579f8d52eb1b\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\e4b3cb3b5bc0ed2844c389169948beec\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\858fbbc08f93b233dc0848e6d030edd5\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\d36f90d8510b911e305a8d85541a88ce\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\9d1dfe414a78f60c6333092382bb613a\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.5.0] C:\Users\15389\.gradle\caches\transforms-3\75b5b185d955dc7ebcd73bf352f5f50a\transformed\core-1.5.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\c85115bd298a37c61c768691d2d57974\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\06fc7e0ba4f774df99f5e7e423fc3ada\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\d35f012330d992e2f1b60c95f0c62c8a\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\55a7e845cb438eb8d233bb5caf07dc16\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\380a462fdfe9a671082b9b323a6f1bbb\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\6409b1f00c95e4a302e9a7acdda43e1a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\15389\.gradle\caches\transforms-3\5693bea54643539c7a60593c32659f23\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\15389\.gradle\caches\transforms-3\88a66f4eb23413d88580176b06d6ab16\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\15389\.gradle\caches\transforms-3\78d9959c3c5ea2a07136e57a8761d448\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\15389\.gradle\caches\transforms-3\8af42c7b85507a44dc43199ab730966d\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\15389\.gradle\caches\transforms-3\c2068ceee5c5a6c5c13082f2a9f5edc1\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\15389\.gradle\caches\transforms-3\33e31902447c8631afd1c48d6b7ca5a7\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\09f5b8e7b386b4382c4effbca953f7d5\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\8d2e55e6c08849fd314e3e00010d8cb4\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+	package
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:3:5-36
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:5:5-40
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:8:5-71
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:8:22-68
+uses-permission#android.permission.CAMERA
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:9:22-62
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:10:22-72
+application
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:12:5-89:19
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\15389\.gradle\caches\transforms-3\ea1662c32d3ff65527ec492dacf54091\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\15389\.gradle\caches\transforms-3\ea1662c32d3ff65527ec492dacf54091\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\15389\.gradle\caches\transforms-3\a44aaa7d5c8fa8ef4de48d9671cd78db\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\15389\.gradle\caches\transforms-3\a44aaa7d5c8fa8ef4de48d9671cd78db\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.5.0] C:\Users\15389\.gradle\caches\transforms-3\75b5b185d955dc7ebcd73bf352f5f50a\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] C:\Users\15389\.gradle\caches\transforms-3\75b5b185d955dc7ebcd73bf352f5f50a\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\15389\.gradle\caches\transforms-3\5693bea54643539c7a60593c32659f23\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\15389\.gradle\caches\transforms-3\5693bea54643539c7a60593c32659f23\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.5.0] C:\Users\15389\.gradle\caches\transforms-3\75b5b185d955dc7ebcd73bf352f5f50a\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:15:9-31
+	android:icon
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:13:9-38
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:14:9-33
+provider#androidx.core.content.FileProvider
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:16:9-24:20
+	android:grantUriPermissions
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:20:13-47
+	android:authorities
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:18:13-69
+	android:exported
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:17:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:21:13-23:54
+	android:resource
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:23:17-51
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:22:17-67
+activity#com.iflytek.voicedemo.MainActivity
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:26:9-37:20
+	android:screenOrientation
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:31:13-49
+	android:label
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:30:13-35
+	android:configChanges
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:28:13-133
+	android:icon
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:29:13-42
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:27:13-62
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:32:13-36:29
+action#android.intent.action.MAIN
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:35:27-74
+activity#com.iflytek.speech.setting.TtsSettings
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:38:9-75
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:38:19-72
+activity#com.iflytek.speech.setting.IatSettings
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:39:9-75
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:39:19-72
+activity#com.iflytek.voicedemo.IatDemo
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:40:9-43:52
+	android:screenOrientation
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:43:13-49
+	android:configChanges
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:42:13-133
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:41:13-57
+activity#com.iflytek.voicedemo.AsrDemo
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:44:9-47:52
+	android:screenOrientation
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:47:13-49
+	android:configChanges
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:46:13-133
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:45:13-57
+activity#com.iflytek.voicedemo.TtsDemo
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:48:9-51:52
+	android:screenOrientation
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:51:13-49
+	android:configChanges
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:50:13-133
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:49:13-57
+activity#com.iflytek.voicedemo.IseDemo
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:52:9-55:52
+	android:screenOrientation
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:55:13-49
+	android:configChanges
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:54:13-133
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:53:13-57
+activity#com.iflytek.voicedemo.faceonline.OnlineFaceDemo
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:56:9-59:52
+	android:screenOrientation
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:59:13-49
+	android:configChanges
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:58:13-133
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:57:13-75
+activity#com.iflytek.voicedemo.IdentifyGroup.GroupManagerActivity
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:60:9-63:52
+	android:screenOrientation
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:63:13-49
+	android:configChanges
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:62:13-133
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:61:13-84
+activity#com.iflytek.voicedemo.IdentifyGroup.FaceIdentifyActivity
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:64:9-67:52
+	android:screenOrientation
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:67:13-49
+	android:configChanges
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:66:13-133
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:65:13-84
+activity#com.iflytek.voicedemo.IdentifyGroup.ResultIdentifyActivity
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:68:9-71:52
+	android:screenOrientation
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:71:13-49
+	android:configChanges
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:70:13-133
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:69:13-86
+activity#com.iflytek.speech.setting.IseSettings
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:72:9-75:52
+	android:screenOrientation
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:75:13-49
+	android:configChanges
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:74:13-133
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:73:13-66
+activity#com.iflytek.speech.setting.UrlSettings
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:76:9-79:52
+	android:screenOrientation
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:79:13-49
+	android:configChanges
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:78:13-133
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:77:13-66
+meta-data#IFLYTEK_APPKEY
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:81:9-83:42
+	android:value
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:83:13-29
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:82:13-42
+meta-data#IFLYTEK_CHANNEL
+ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:84:9-86:44
+	android:value
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:86:13-41
+	android:name
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:85:13-43
+uses-sdk
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\3284ae09c1513edd44ae4c8d8e9b9128\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\3284ae09c1513edd44ae4c8d8e9b9128\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\15389\.gradle\caches\transforms-3\ea1662c32d3ff65527ec492dacf54091\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0] C:\Users\15389\.gradle\caches\transforms-3\ea1662c32d3ff65527ec492dacf54091\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\58746da80968fd4fa14f0a407845c6a3\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\58746da80968fd4fa14f0a407845c6a3\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\d1c6f7d3c9e151b51d1258ebf5b70d0c\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\d1c6f7d3c9e151b51d1258ebf5b70d0c\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\a14204dd974ad58e11bf5db1b38560e8\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\a14204dd974ad58e11bf5db1b38560e8\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\b81baf2f64af89e48503ace4a0d48ea4\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\b81baf2f64af89e48503ace4a0d48ea4\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\35a9d0aae831ee659c735494fede0143\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\35a9d0aae831ee659c735494fede0143\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\15389\.gradle\caches\transforms-3\a44aaa7d5c8fa8ef4de48d9671cd78db\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\15389\.gradle\caches\transforms-3\a44aaa7d5c8fa8ef4de48d9671cd78db\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\15389\.gradle\caches\transforms-3\a0a79cfc7fccdcc5bcc375017b2a33cf\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\15389\.gradle\caches\transforms-3\a0a79cfc7fccdcc5bcc375017b2a33cf\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\15389\.gradle\caches\transforms-3\a428acea1e53785af0d13a3b2477c96d\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\15389\.gradle\caches\transforms-3\a428acea1e53785af0d13a3b2477c96d\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\15389\.gradle\caches\transforms-3\7dad3e04c3ff829dd25f99340f97f47d\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\15389\.gradle\caches\transforms-3\7dad3e04c3ff829dd25f99340f97f47d\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\e5d23626b6001b7aa096f6179bfcc35a\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\e5d23626b6001b7aa096f6179bfcc35a\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\263583e125cdd770a6e88249722a6251\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\263583e125cdd770a6e88249722a6251\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\1c9e49e2cba303014bc395e1182205cc\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\1c9e49e2cba303014bc395e1182205cc\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\70b28b4a540938fcb3fdb167a2c9f2e1\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\70b28b4a540938fcb3fdb167a2c9f2e1\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\f6a8f907c15f2c182d513015ffb56533\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\f6a8f907c15f2c182d513015ffb56533\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\9b8330d8b605d4604cdbf435cb850e5a\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\9b8330d8b605d4604cdbf435cb850e5a\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\39982f681787b6f75f5d172eb41d4694\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\39982f681787b6f75f5d172eb41d4694\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\cff220987cec5d32bdcc0c08c1f83fe2\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\cff220987cec5d32bdcc0c08c1f83fe2\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\a19c4fd82661b56f245e579f8d52eb1b\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\15389\.gradle\caches\transforms-3\a19c4fd82661b56f245e579f8d52eb1b\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\e4b3cb3b5bc0ed2844c389169948beec\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\e4b3cb3b5bc0ed2844c389169948beec\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\858fbbc08f93b233dc0848e6d030edd5\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\858fbbc08f93b233dc0848e6d030edd5\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\d36f90d8510b911e305a8d85541a88ce\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\d36f90d8510b911e305a8d85541a88ce\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\9d1dfe414a78f60c6333092382bb613a\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\9d1dfe414a78f60c6333092382bb613a\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] C:\Users\15389\.gradle\caches\transforms-3\75b5b185d955dc7ebcd73bf352f5f50a\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] C:\Users\15389\.gradle\caches\transforms-3\75b5b185d955dc7ebcd73bf352f5f50a\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\c85115bd298a37c61c768691d2d57974\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\c85115bd298a37c61c768691d2d57974\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\06fc7e0ba4f774df99f5e7e423fc3ada\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\06fc7e0ba4f774df99f5e7e423fc3ada\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\d35f012330d992e2f1b60c95f0c62c8a\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\d35f012330d992e2f1b60c95f0c62c8a\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\55a7e845cb438eb8d233bb5caf07dc16\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\55a7e845cb438eb8d233bb5caf07dc16\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\380a462fdfe9a671082b9b323a6f1bbb\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\380a462fdfe9a671082b9b323a6f1bbb\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\6409b1f00c95e4a302e9a7acdda43e1a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\6409b1f00c95e4a302e9a7acdda43e1a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\15389\.gradle\caches\transforms-3\5693bea54643539c7a60593c32659f23\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\15389\.gradle\caches\transforms-3\5693bea54643539c7a60593c32659f23\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\15389\.gradle\caches\transforms-3\88a66f4eb23413d88580176b06d6ab16\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\15389\.gradle\caches\transforms-3\88a66f4eb23413d88580176b06d6ab16\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\15389\.gradle\caches\transforms-3\78d9959c3c5ea2a07136e57a8761d448\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\15389\.gradle\caches\transforms-3\78d9959c3c5ea2a07136e57a8761d448\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\15389\.gradle\caches\transforms-3\8af42c7b85507a44dc43199ab730966d\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\15389\.gradle\caches\transforms-3\8af42c7b85507a44dc43199ab730966d\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\15389\.gradle\caches\transforms-3\c2068ceee5c5a6c5c13082f2a9f5edc1\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\15389\.gradle\caches\transforms-3\c2068ceee5c5a6c5c13082f2a9f5edc1\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\15389\.gradle\caches\transforms-3\33e31902447c8631afd1c48d6b7ca5a7\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\15389\.gradle\caches\transforms-3\33e31902447c8631afd1c48d6b7ca5a7\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\09f5b8e7b386b4382c4effbca953f7d5\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\09f5b8e7b386b4382c4effbca953f7d5\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\8d2e55e6c08849fd314e3e00010d8cb4\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\8d2e55e6c08849fd314e3e00010d8cb4\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml

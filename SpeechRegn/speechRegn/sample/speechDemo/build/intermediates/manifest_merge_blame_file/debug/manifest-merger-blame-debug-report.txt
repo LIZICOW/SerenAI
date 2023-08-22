@@ -1,0 +1,180 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.iflytek.voicedemo"
+4    android:versionCode="1"
+5    android:versionName="2.0.1018.1013" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:7:5-67
+11-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:7:22-64
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:8:5-71
+12-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:8:22-68
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:9:5-65
+13-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:9:22-62
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+14-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:10:5-75
+14-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:10:22-72
+15
+16    <application
+16-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:12:5-89:19
+17        android:name="com.iflytek.voicedemo.SpeechApp"
+17-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:14:9-33
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.5.0] C:\Users\15389\.gradle\caches\transforms-3\75b5b185d955dc7ebcd73bf352f5f50a\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@drawable/icon"
+20-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:13:9-38
+21        android:label="讯飞语音示例"
+21-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:15:9-31
+22        android:testOnly="true" >
+23        <provider
+23-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:16:9-24:20
+24            android:name="androidx.core.content.FileProvider"
+24-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:17:13-62
+25            android:authorities="com.iflytek.voicedemo.fileprovider"
+25-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:18:13-69
+26            android:exported="false"
+26-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:19:13-37
+27            android:grantUriPermissions="true" >
+27-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:20:13-47
+28            <meta-data
+28-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:21:13-23:54
+29                android:name="android.support.FILE_PROVIDER_PATHS"
+29-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:22:17-67
+30                android:resource="@xml/file_paths" />
+30-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:23:17-51
+31        </provider>
+32
+33        <activity
+33-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:26:9-37:20
+34            android:name="com.iflytek.voicedemo.MainActivity"
+34-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:27:13-62
+35            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+35-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:28:13-133
+36            android:icon="@drawable/icon"
+36-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:29:13-42
+37            android:label="讯飞语音示例"
+37-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:30:13-35
+38            android:screenOrientation="portrait" >
+38-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:31:13-49
+39            <intent-filter>
+39-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:32:13-36:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:33:17-69
+40-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:33:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:35:17-77
+42-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:35:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity android:name="com.iflytek.speech.setting.TtsSettings" />
+45-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:38:9-75
+45-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:38:19-72
+46        <activity android:name="com.iflytek.speech.setting.IatSettings" />
+46-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:39:9-75
+46-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:39:19-72
+47        <activity
+47-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:40:9-43:52
+48            android:name="com.iflytek.voicedemo.IatDemo"
+48-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:41:13-57
+49            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+49-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:42:13-133
+50            android:screenOrientation="portrait" />
+50-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:43:13-49
+51        <activity
+51-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:44:9-47:52
+52            android:name="com.iflytek.voicedemo.AsrDemo"
+52-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:45:13-57
+53            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+53-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:46:13-133
+54            android:screenOrientation="portrait" />
+54-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:47:13-49
+55        <activity
+55-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:48:9-51:52
+56            android:name="com.iflytek.voicedemo.TtsDemo"
+56-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:49:13-57
+57            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+57-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:50:13-133
+58            android:screenOrientation="portrait" />
+58-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:51:13-49
+59        <activity
+59-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:52:9-55:52
+60            android:name="com.iflytek.voicedemo.IseDemo"
+60-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:53:13-57
+61            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+61-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:54:13-133
+62            android:screenOrientation="portrait" />
+62-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:55:13-49
+63        <activity
+63-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:56:9-59:52
+64            android:name="com.iflytek.voicedemo.faceonline.OnlineFaceDemo"
+64-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:57:13-75
+65            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+65-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:58:13-133
+66            android:screenOrientation="portrait" />
+66-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:59:13-49
+67        <activity
+67-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:60:9-63:52
+68            android:name="com.iflytek.voicedemo.IdentifyGroup.GroupManagerActivity"
+68-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:61:13-84
+69            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+69-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:62:13-133
+70            android:screenOrientation="portrait" />
+70-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:63:13-49
+71        <activity
+71-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:64:9-67:52
+72            android:name="com.iflytek.voicedemo.IdentifyGroup.FaceIdentifyActivity"
+72-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:65:13-84
+73            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+73-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:66:13-133
+74            android:screenOrientation="portrait" />
+74-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:67:13-49
+75        <activity
+75-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:68:9-71:52
+76            android:name="com.iflytek.voicedemo.IdentifyGroup.ResultIdentifyActivity"
+76-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:69:13-86
+77            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+77-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:70:13-133
+78            android:screenOrientation="portrait" />
+78-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:71:13-49
+79        <activity
+79-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:72:9-75:52
+80            android:name="com.iflytek.speech.setting.IseSettings"
+80-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:73:13-66
+81            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+81-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:74:13-133
+82            android:screenOrientation="portrait" />
+82-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:75:13-49
+83        <activity
+83-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:76:9-79:52
+84            android:name="com.iflytek.speech.setting.UrlSettings"
+84-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:77:13-66
+85            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+85-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:78:13-133
+86            android:screenOrientation="portrait" />
+86-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:79:13-49
+87        <!-- 移动统计分析 -->
+88        <meta-data
+88-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:81:9-83:42
+89            android:name="IFLYTEK_APPKEY"
+89-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:82:13-42
+90            android:value="&apos;5cee406c&apos;" />
+90-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:83:13-29
+91        <meta-data
+91-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:84:9-86:44
+92            android:name="IFLYTEK_CHANNEL"
+92-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:85:13-43
+93            android:value="Android_Demo" />
+93-->C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:86:13-41
+94    </application>
+95
+96</manifest>
