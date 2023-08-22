@@ -14,8 +14,8 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/login")
-    public Result<User> loginController(@RequestParam String uname, @RequestParam String password){
-        User user = userService.loginService(uname, password);
+    public Result<User> loginController(@RequestBody User LoginUser){
+        User user = userService.loginService(LoginUser.getUname(), LoginUser.getPassword());
         if(user!=null){
             return Result.success(user,"登录成功！");
         }else{
