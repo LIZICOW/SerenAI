@@ -22,4 +22,12 @@ public class EntryActivity extends AppCompatActivity {
         // 关闭当前活动
         finish();
     }
+
+    public void onRegisterClick(View view) {
+        // 创建一个 Intent，将当前 Activity 与目标 RegisterActivity 关联
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent); // 启动 RegisterActivity
+        // 关闭当前活动
+        finish();
+    }
 }

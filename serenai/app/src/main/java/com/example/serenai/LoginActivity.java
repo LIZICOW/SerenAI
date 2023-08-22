@@ -2,6 +2,7 @@ package com.example.serenai;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,7 +22,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 public class LoginActivity extends AppCompatActivity {
-    public String url = "";
+    public String url = "http://1.15.66.98:8081/api";
 
     private EditText editTextAccount;
     private EditText editTextPwd;
@@ -31,17 +32,26 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        sharedPreferencesManager = new SharedPreferencesManager(this);
         // 绑定视图
         editTextAccount = findViewById(R.id.editTextAccount);
         editTextPwd = findViewById(R.id.editTextPwd);
+    }
+
+    // 处理返回逻辑
+    public void onBackClick(View view) {
+        // 创建一个 Intent，将当前 Activity 与目标 LoginActivity 关联
+        Intent intent = new Intent(this, EntryActivity.class);
+        startActivity(intent); // 启动 EntryActivity
+        // 关闭当前活动
+        finish();
     }
 
     // 处理登录按钮点击事件
     public void Login(View view) {
         String account = editTextAccount.getText().toString();
         String password = editTextPwd.getText().toString();
-        if(account.equals("")||password.equals("")){
+        if (account.equals("") || password.equals("")) {
             return;
         }
         // 对密码进行 SHA256 加密
@@ -67,9 +77,7 @@ public class LoginActivity extends AppCompatActivity {
                 MediaType JSON = MediaType.parse("application/json;charset=utf-8");
                 JSONObject json = new JSONObject();
                 try {
-                    json.put("phone", account);
-//                                    json.put("username", phone_number);
-//                                    json.put("username", );
+                    json.put("uname", account);
                     json.put("password", encryptedPassword);
                 } catch (JSONException e) {
                     throw new RuntimeException(e);
@@ -78,10 +86,11 @@ public class LoginActivity extends AppCompatActivity {
                 OkHttpClient okHttpClient = new OkHttpClient();
                 RequestBody requestBody = RequestBody.create(JSON, String.valueOf(json));
                 Request request = new Request.Builder()
-                        .url(url+"/user/login")
+                        .url(url + "/user/login")
                         .post(requestBody)
                         .build();
-// 发送请求并获取响应
+
+                // 发送请求并获取响应
                 try {
                     Response response = okHttpClient.newCall(request).execute();
                     // 检查响应是否成功
@@ -96,36 +105,36 @@ public class LoginActivity extends AppCompatActivity {
                         int code = responseJson.getInt("code");
                         //确定返回状态
                         switch (code) {
-                            case 200:
+                            case 0:
                                 // 检查响应头部中是否存在 "Set-Cookie" 字段
                                 Headers headers = response.headers();
                                 List<String> cookies = headers.values("Set-Cookie");
-                                String s = cookies.get(0);
-                                System.out.println("cookie  "+s);
-                                String sessionCookie;
-                                if (s != null) {
-                                    // 在这里处理获取到的会话信息
-                                    // sessionCookie 变量中存储了服务器返回的会话信息
-                                    // 可以将其存储在本地，后续的请求可以携带这个会话信息
-                                    sessionCookie = s.substring(0, s.indexOf(";"));
-                                    sharedPreferencesManager.setKEY_Session_ID(sessionCookie);
-                                    //showRequestFailedDialog(sessionCookie);
-                                } else {
-                                    // 服务器没有返回会话信息
-                                    // 可能是未登录状态或者会话已经过期
+                                if(!cookies.isEmpty()){
+                                    String s = cookies.get(0);
+                                    System.out.println("cookie  " + s);
+                                    String sessionCookie;
+                                    if (s != null) {
+                                        // 在这里处理获取到的会话信息
+                                        // sessionCookie 变量中存储了服务器返回的会话信息
+                                        // 可以将其存储在本地，后续的请求可以携带这个会话信息
+                                        sessionCookie = s.substring(0, s.indexOf(";"));
+                                        sharedPreferencesManager.setKEY_Session_ID(sessionCookie);
+                                    } else {
+                                        // 服务器没有返回会话信息
+                                        // 可能是未登录状态或者会话已经过期
+                                    }
                                 }
+
                                 setData(responseJson);
                                 // 登录成功，改变登录状态
                                 if (sharedPreferencesManager.isLoggedIn()) {
-                                    if(!needSet) {
-                                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                                        startActivity(intent);
-                                        finish(); // 结束当前的LoginActivity
-                                    }else{
-                                        Intent intent = new Intent(LoginActivity.this, InitFigureActivity.class);
-                                        startActivity(intent);
-                                        finish(); // 结束当前的LoginActivity
-                                    }
+                                    //这里添加逻辑，跳转到主页面
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            showRequestFailedDialog("登录成功");
+                                        }
+                                    });
                                 }
                                 break;
                             //登录成功
@@ -148,9 +157,6 @@ public class LoginActivity extends AppCompatActivity {
                                 break;
                             //密码错误
                         }
-                        System.out.println("username: " + phone_number);
-                        System.out.println("password: " + password);
-                        System.out.println("Response: " + responseData);
                         // 记得关闭响应体
                         responseBody.close();
                     } else {
@@ -166,9 +172,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         }).start();
 
-            }
-
-
     }
 
     // 对密码进行 SHA256 加密
@@ -180,5 +183,30 @@ public class LoginActivity extends AppCompatActivity {
     // 显示 Toast 提示信息
     private void showToast(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
+
+    // 弹出请求失败的对话框
+    private void showRequestFailedDialog(String str) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                builder.setTitle("注意")
+                        .setMessage(str)
+                        .setPositiveButton("确定", null)
+                        .show();
+            }
+        });
+    }
+    private void setData(JSONObject responseJson) throws JSONException {
+        // 提取键为"data"的值
+        JSONObject dataJson = responseJson.getJSONObject("data");
+        System.out.println(dataJson);
+        String uid = dataJson.optString("uid", "");
+        String uname = dataJson.optString("uname", "");
+
+        sharedPreferencesManager.setUserID(uid);
+        sharedPreferencesManager.setUsername(uname);
+        sharedPreferencesManager.setLoggedIn(true);
     }
 }
