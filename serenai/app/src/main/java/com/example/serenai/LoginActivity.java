@@ -129,12 +129,10 @@ public class LoginActivity extends AppCompatActivity {
                                 // 登录成功，改变登录状态
                                 if (sharedPreferencesManager.isLoggedIn()) {
                                     //这里添加逻辑，跳转到主页面
-                                    runOnUiThread(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            showRequestFailedDialog("登录成功");
-                                        }
-                                    });
+                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                    startActivity(intent); // 启动 LoginActivity
+                                    // 关闭当前活动
+                                    finish();
                                 }
                                 break;
                             //登录成功

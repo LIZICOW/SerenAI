@@ -1,20 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout">
 
-    <ImageView
-        android:id="@+id/imageViewBackground"
-        android:layout_width="match_parent"
+    <!--DrawerLayout最好为界面的根布局-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/more_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/main_more"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="-28dp"
+            android:layout_marginTop="103dp"
+            android:onClick="onMoreClick"
+            />
+
+    </LinearLayout>
+    <!--主内容区的布局代码要放在侧滑菜单布局的前面,-->
+
+
+    <!--必须设置layout_gravity属性,表示侧滑方向-->
+    <LinearLayout
+        android:id="@+id/navigation_drawer"
+        android:layout_width="160dp"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/start"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:background="#B8D9DE"
+        android:alpha="0.93" >
+
+        <!-- ImageView -->
+        <ImageView
+            android:id="@+id/drawerhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/main_drawerhead"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true" />
+
+        <!-- 水平布局包裹两个 SeekBar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:orientation="horizontal">
+
+            <!-- 音量调节 SeekBar -->
+            <SeekBar
+                android:id="@+id/volumeSeekBar"
+                android:layout_width="175dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:rotation="270"
+                android:progress="50" />
+
+            <!-- 亮度调节 SeekBar -->
+            <SeekBar
+                android:id="@+id/brightnessSeekBar"
+                android:layout_width="175dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:rotation="270"
+                android:progress="50" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
