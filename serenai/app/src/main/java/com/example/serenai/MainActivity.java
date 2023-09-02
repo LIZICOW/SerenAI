@@ -73,4 +73,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void onDesignClick(View view){
+        // 创建一个 Intent，将当前 Activity 与目标 DesignActivity 关联
+        Intent intent = new Intent(this, DesignActivity.class);
+        startActivity(intent); // 启动 DesignActivity
+        // 关闭当前活动
+        finish();
+    }
+
 }
