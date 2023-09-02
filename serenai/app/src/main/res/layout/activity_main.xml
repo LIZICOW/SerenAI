@@ -29,7 +29,7 @@
     <!--必须设置layout_gravity属性,表示侧滑方向-->
     <LinearLayout
         android:id="@+id/navigation_drawer"
-        android:layout_width="160dp"
+        android:layout_width="200dp"
         android:layout_height="match_parent"
         android:layout_gravity="left"
         android:orientation="vertical"
@@ -48,29 +48,138 @@
         <!-- 水平布局包裹两个 SeekBar -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="256dp"
+            android:layout_height="210dp"
             android:orientation="horizontal">
 
             <!-- 音量调节 SeekBar -->
             <SeekBar
                 android:id="@+id/volumeSeekBar"
-                android:layout_width="175dp"
+                android:layout_width="207dp"
                 android:layout_height="48dp"
-                android:layout_weight="1"
+                android:layout_marginTop="80dp"
+                android:layout_marginStart="-50dp"
                 android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/voice"
                 android:rotation="270"
-                android:progress="50" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
 
             <!-- 亮度调节 SeekBar -->
             <SeekBar
                 android:id="@+id/brightnessSeekBar"
-                android:layout_width="175dp"
+                android:layout_width="207dp"
                 android:layout_height="48dp"
-                android:layout_weight="1"
+                android:layout_marginTop="80dp"
+                android:layout_marginStart="-110dp"
                 android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/light"
                 android:rotation="270"
-                android:progress="50" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
         </LinearLayout>
+
+        <!--静音按钮-->
+        <ImageView
+            android:id="@+id/quietbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/main_quiet"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onQuietClick"
+            />
+
+        <!--分割线-->
+        <ImageView
+            android:id="@+id/drawerDivider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/main_divider"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"
+            />
+
+        <!--自定义按钮-->
+        <ImageView
+            android:id="@+id/drawerDesign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/main_design"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"/>
+
+        <!--对话记录按钮-->
+        <ImageView
+            android:id="@+id/drawerDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/main_diag"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"/>
+
+        <!--分割线-->
+        <ImageView
+            android:id="@+id/drawerDivider2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/main_divider"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"
+            />
+
+        <!--语言按钮-->
+        <ImageView
+            android:id="@+id/drawerLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/main_lang"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"/>
+
+        <!--设置按钮-->
+        <ImageView
+            android:id="@+id/drawerSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/main_setting"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"/>
+
+        <!--夜间模式按钮-->
+        <ImageView
+            android:id="@+id/drawerNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/main_night"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"
+            />
     </LinearLayout>
 
 
