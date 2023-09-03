@@ -33,4 +33,25 @@ public class UserServiceImpl implements UserService{
         newUser.setPassword("");
         return newUser;
     }
+
+    @Override
+    public User getBasicInfoService(long uid) {
+        // 调用数据库查询方法，根据 uid 获取用户基本信息
+        // 返回一个 User 对象，包含用户的基本信息
+        return userDao.findByUid(uid);
+    }
+
+    public boolean updateProfileService(long uid, String newName, String newSignature) {
+        User user = userDao.getOne(uid);
+
+        if (user != null) {
+            user.setUname(newName);
+            user.setSignature(newSignature);
+            userDao.save(user);
+            return true;
+        }
+
+        return false;
+    }
+
 }
