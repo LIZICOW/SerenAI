@@ -1,44 +1,35 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- 背景样式（使用背景图片） -->
-    <item android:id="@android:id/background">
-        <bitmap android:src="@drawable/main_voice" />
+    <item android:id="@android:id/background"
+        android:layout_width="match_parent"
+        android:height="48dp">
+        <shape>
+            <corners android:radius="10dip" />
+            <gradient
+                android:startColor="#26004752"
+                android:endColor="#004752" />
+        </shape>
+
     </item>
-    <!-- 次要进度样式 -->
-    <item android:id="@android:id/secondaryProgress">
-        <clip>
-            <shape>
-                <corners android:radius="5dip" />
-                <gradient
-                    android:layout_width="220dp"
-                    android:layout_height="48dp"
-                    android:startColor="#80ffd300"
-                    android:centerColor="#80ffb600"
-                    android:centerY="0.75"
-                    android:endColor="#a0ffcb00"
-                    android:angle="270"
-                    android:clipOrientation="vertical"
-                    android:gravity="bottom"
-                    /> <!-- 垂直方向 -->
-            </shape>
-        </clip>
+    <item
+        android:end="100dp">
+
+        <rotate android:fromDegrees="90">
+
+            <bitmap android:src="@drawable/volume_media"
+                android:gravity="center"/>
+        </rotate>
     </item>
-    <!-- 主要进度样式 -->
+    <!-- 进度样式 -->
     <item android:id="@android:id/progress">
         <clip
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
             <shape>
-                <corners android:radius="5dip" />
+                <corners android:radius="11dip" />
                 <gradient
-                    android:layout_width="220dp"
-                android:layout_height="48dp"
-                    android:angle="270"
-                    android:centerColor="#ffffb600"
-                    android:centerY="0.75"
-                    android:clipOrientation="vertical"
-                    android:endColor="#ffffcb00"
-                    android:gravity="bottom"
-                    android:startColor="#ffffd300" /> <!-- 垂直方向 -->
+                    android:endColor="#004752"
+                    android:startColor="#26004752" /> <!-- 垂直方向 -->
             </shape>
         </clip>
     </item>
