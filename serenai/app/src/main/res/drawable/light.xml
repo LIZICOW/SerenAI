@@ -11,6 +11,17 @@
         </shape>
 
     </item>
+
+    <item
+        android:end="100dp">
+
+        <rotate android:fromDegrees="90">
+
+            <bitmap android:src="@drawable/volume_light"
+                android:gravity="center"/>
+        </rotate>
+    </item>
+
     <!-- 主要进度样式 -->
     <item android:id="@android:id/progress">
         <clip

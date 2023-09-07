@@ -1,0 +1,27 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景样式（使用背景图片） -->
+    <item android:id="@android:id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <shape>
+            <gradient
+                android:startColor="#D6D6D6"
+                android:endColor="#00B0CF" />
+        </shape>
+
+    </item>
+    <!-- 主要进度样式 -->
+<!--    <item android:id="@android:id/progress">-->
+<!--        <clip-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+<!--            <shape>-->
+<!--                <corners android:radius="11dip" />-->
+<!--                <gradient-->
+<!--                    android:startColor="#AB004B57"-->
+<!--                    android:endColor="#26E2FF"/> &lt;!&ndash; 垂直方向 &ndash;&gt;-->
+<!--            </shape>-->
+<!--        </clip>-->
+<!--    </item>-->
+</layer-list>

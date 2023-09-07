@@ -3,8 +3,22 @@ package com.example.serenai;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
+
+import android.graphics.Color;
+import android.graphics.LinearGradient;
+import android.graphics.PorterDuff;
+import android.graphics.Shader;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.RectShape;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.SeekBar;
 import android.widget.Toast;
 import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
@@ -19,6 +33,8 @@ public class DesignActivity extends AppCompatActivity {
     private ArrayList<Fragment> fgs=new ArrayList<Fragment>();
     //标签页具体的显示内容
     private ViewPager vp;
+
+    SeekBar seekBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,13 +71,13 @@ public class DesignActivity extends AppCompatActivity {
         //添加右边标签页
         fgs.add(new Design_Right());
 
-
     }
 
     //用BaseFragemetAdapter来管理当前的子标签页
     private void intiDatas()
     {
         initMenus();
+
         BaseFragemetAdapter adapter=new BaseFragemetAdapter( getSupportFragmentManager());
 
         adapter.setFgs(fgs,mTitles);
@@ -81,4 +97,5 @@ public class DesignActivity extends AppCompatActivity {
     {
         return this.findViewById(id);
     }
+
 }
