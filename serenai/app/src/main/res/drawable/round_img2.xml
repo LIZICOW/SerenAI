@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:radius="412dp" /> <!-- radius 的值可以根据需要进行调整 -->
-    <solid android:color="#B8D9DE"/>
-</shape>
