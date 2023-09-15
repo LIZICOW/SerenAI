@@ -81,4 +81,12 @@ public class MainActivity extends AppCompatActivity {
         finish();
     }
 
+    public void  onInfoClick(View view){
+        Intent intent = new Intent(this,InfoActivity.class);
+        startActivity(intent); // 启动 DesignActivity
+        // 关闭当前活动
+        finish();
+
+    }
+
 }
