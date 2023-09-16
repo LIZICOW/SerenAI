@@ -32,9 +32,12 @@
         <activity
             android:name=".EntryActivity"
             android:exported="false" /> <!-- 声明 SplashActivity -->
+        <activity android:name=".InfoActivity"
+            android:exported="false"/>
         <activity
             android:name=".SplashActivity"
             android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
