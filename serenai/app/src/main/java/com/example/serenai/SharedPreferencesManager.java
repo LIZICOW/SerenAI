@@ -13,6 +13,8 @@ public class SharedPreferencesManager {
     private static final String KEY_USER_ID = "userID";
     private static final String KEY_IS_Youke = "isyouke";
     private static final String KEY_Session_ID = "";
+    private static final String KEY_USER_Signature="signature";
+    private static final String KEY_USER_YONGHUMING="yonghuming";
     private SharedPreferences sharedPreferences;
 
     public SharedPreferencesManager(Context context) {
@@ -69,6 +71,18 @@ public class SharedPreferencesManager {
     public void setUserID(String userID) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(KEY_USER_ID, userID);
+        editor.apply();
+    }
+    public String getUSERSignature(){return sharedPreferences.getString(KEY_USER_Signature,"");}
+    public void setUserSignature(String signature){
+        SharedPreferences.Editor editor=sharedPreferences.edit();
+        editor.putString(KEY_USER_Signature,signature);
+        editor.apply();
+    }
+    public String getUSERYonghuming(){return sharedPreferences.getString(KEY_USER_YONGHUMING,"");}
+    public void setUserYonghuming(String yonghuming){
+        SharedPreferences.Editor editor=sharedPreferences.edit();
+        editor.putString(KEY_USER_Signature,yonghuming);
         editor.apply();
     }
 }
