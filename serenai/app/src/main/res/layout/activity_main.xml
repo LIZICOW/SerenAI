@@ -182,6 +182,43 @@
             android:layout_marginTop="15dp"
             />
     </LinearLayout>
+    <!--个人信息界面跳转按钮-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_rec"
+            app:srcCompat="@drawable/main_rectangle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="-28dp"
+            android:layout_marginTop="29dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_head_background"
+            app:srcCompat="@drawable/main_head_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/round_img"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_head"
+            app:srcCompat="@drawable/main_head"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="38dp"
+            android:onClick="onInfoClick"
+            />
+    </RelativeLayout>
 
 
 
