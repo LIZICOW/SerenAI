@@ -41,6 +41,15 @@
             android:layout_marginTop="38dp"
             android:onClick="onInfoClick"
             />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="50dp"
+            android:onClick="onARClick">
+        </Button>
     </RelativeLayout>
 
     <LinearLayout
