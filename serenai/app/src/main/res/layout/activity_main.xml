@@ -7,8 +7,9 @@
 
     <!--DrawerLayout最好为界面的根布局-->
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,15 +42,33 @@
             android:layout_marginTop="38dp"
             android:onClick="onInfoClick"
             />
-        <Button
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/main"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="50dp"
-            android:onClick="onARClick">
-        </Button>
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/talk_deeply"
+            android:onClick="onARClick"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="-54dp"
+            android:layout_marginRight="-54dp"
+            android:src="@drawable/main_rightbottom" />
+
     </RelativeLayout>
 
     <LinearLayout
@@ -67,7 +86,7 @@
             android:onClick="onMoreClick"
             />
 
-    </LinearLayout>
+        </LinearLayout>
     <!--主内容区的布局代码要放在侧滑菜单布局的前面,-->
 
 
