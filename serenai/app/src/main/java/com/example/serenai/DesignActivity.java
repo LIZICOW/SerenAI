@@ -44,7 +44,7 @@ public class DesignActivity extends AppCompatActivity {
         initViews();
         intiDatas();
         initEvents();
-
+        mTableLayout.setTabTextColors(Color.BLACK, Color.BLACK);
     }
 
     //监听我们选中的标签页是哪个

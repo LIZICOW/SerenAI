@@ -22,7 +22,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/design_title"
-        app:tabMode="fixed" />
+        android:background="#B8D9DE"
+        app:tabMode="fixed"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicator="@drawable/tab_pane"
+        app:tabIndicatorColor="#127484"
+        app:tabTextAppearance="@style/TabTextSize"/>
 
 
     <androidx.viewpager.widget.ViewPager
