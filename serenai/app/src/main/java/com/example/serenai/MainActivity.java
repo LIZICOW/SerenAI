@@ -11,6 +11,9 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewTreeObserver;
+import android.view.WindowManager;
+import android.widget.SeekBar;
 
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -22,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private AudioManager audioManager;
 
+    private SeekBar volume;
+    private AudioManager am;
+    private int maxVolume, currentVolume;
+    private SeekBar light;
+    private float fBrightness;
+    private int maxBrightness = 255;
+    private WindowManager.LayoutParams lp = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +40,62 @@ public class MainActivity extends AppCompatActivity {
 
         drawerLayout = findViewById(R.id.drawer_layout);
         audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        volume = findViewById(R.id.volumeSeekBar);
+        light = findViewById(R.id.brightnessSeekBar);
+
+        am = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
+        //获取系统最大音量
+        maxVolume = am.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+        volume.setMax(maxVolume);
+        //获取当前音量
+        currentVolume = am.getStreamVolume(AudioManager.STREAM_MUSIC);
+        volume.setProgress(currentVolume);
+        volume.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if(fromUser){
+                    am.setStreamVolume(AudioManager.STREAM_MUSIC, progress, 0);
+                    int currentVolume = am.getStreamVolume(AudioManager.STREAM_MUSIC);
+                    seekBar.setProgress(currentVolume);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                // 当开始拖动SeekBar时触发
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                // 当停止拖动SeekBar时触发
+            }
+        });
+
+        light.setMax(maxBrightness);
+        light.setProgress(maxBrightness / 2);
+        lp = getWindow().getAttributes();
+        fBrightness = (float) light.getProgress() / maxBrightness;
+        lp.screenBrightness =fBrightness;
+        getWindow().setAttributes(lp);
+        light.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+
+                fBrightness = (float) progress/ (float) maxBrightness;
+                lp.screenBrightness = fBrightness;
+                getWindow().setAttributes(lp);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                // 当开始拖动SeekBar时触发
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                // 当停止拖动SeekBar时触发
+            }
+        });
     }
 
     //
