@@ -1,6 +1,8 @@
 package com.example.serenai;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +15,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.IOException;
 import java.util.List;
+
+import okhttp3.Call;
+import okhttp3.Callback;
 import okhttp3.Headers;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
@@ -30,6 +35,9 @@ public class InfoActivity extends AppCompatActivity {
    private EditText signatureEditText;
    private TextView days;
 
+   private int daysDifference;
+
+    @SuppressLint("DefaultLocale")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,9 +48,11 @@ public class InfoActivity extends AppCompatActivity {
         signatureEditText=findViewById(R.id.signatureEditText);
         signatureTextView=findViewById(R.id.signatureTextView);
         days=findViewById(R.id.days);
-        countingDays();
+        sharedPreferencesManager = new SharedPreferencesManager(this);
+        getInfo();
 
-        sendEditRequest(setName(),setSignature());
+//        countingDays(daysDifference);
+        //sendEditRequest(setName(),setSignature());
         usernameEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
@@ -66,17 +76,13 @@ public class InfoActivity extends AppCompatActivity {
             }
         });
     }
-    public void countingDays(int num){
-        String notice=getString(R.string.days);
-        String meet_days=String.format(notice,num);
-        days.setText(meet_days);
-    }
-    //设置天数的默认值为0
-    public void countingDays(){
-        int default_num=0;
-        countingDays(default_num);
-    }
+//    public void countingDays(int num){
+//        String notice=getString(R.string.days);
+//        String meet_days=String.format(notice,num);
+//        days.setText(meet_days);
+//    }
     public void onLogOffClick(View view){
+        sharedPreferencesManager.logout();
         Intent intent=new Intent(this,EntryActivity.class);
         startActivity(intent);
         finish();
@@ -108,7 +114,7 @@ public class InfoActivity extends AppCompatActivity {
 
         return usernameTextView.getText().toString();
     }
-    public String  setSignature(){
+    public String setSignature(){
         signatureEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) {
@@ -134,79 +140,147 @@ public class InfoActivity extends AppCompatActivity {
         return signatureTextView.getText().toString();
     }
 
-    private void sendEditRequest(String newName, String newSignature) {
-        // 在这里添加后端的代码
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                MediaType JSON = MediaType.parse("application/json;charset=utf-8");
-                JSONObject json = new JSONObject();
-                try {
-                    json.put("yonghuming", newName);
-                    json.put("signature", newSignature);
-                } catch (JSONException e) {
-                    throw new RuntimeException(e);
-                }
-                //创建一个OkHttpClient对象
-                OkHttpClient okHttpClient = new OkHttpClient();
-                RequestBody requestBody = RequestBody.create(JSON, String.valueOf(json));
-                Request request = new Request.Builder()
-                        .url(url + "/user/info")
-                        .post(requestBody)
-                        .build();
+    // 获取个人信息，并进行页面渲染
+    public void getInfo() {
+        // 创建一个OkHttpClient对象
+        OkHttpClient okHttpClient = new OkHttpClient();
+        String Url = url + "/user/getBasicInfo/" + sharedPreferencesManager.getUserID();
+        Request request = new Request.Builder()
+                .url(Url)
+                .get()
+                .build();
 
-                // 发送请求并获取响应
-                try {
-                    Response response = okHttpClient.newCall(request).execute();
-                    // 检查响应是否成功
-                    if (response.isSuccessful()) {
-                        // 获取响应体
-                        ResponseBody responseBody = response.body();
+        // 异步执行HTTP请求
+        okHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                if (response.isSuccessful()) {
+                    // 获取响应体
+                    ResponseBody responseBody = response.body();
+                    try {
                         // 处理响应数据
                         String responseData = responseBody.string();
                         JSONObject responseJson = new JSONObject(responseData);
                         // 提取键为"code"的值
                         int code = responseJson.getInt("code");
-                        //确定返回状态
-                        switch (code) {
-                            case 0:
-                                // 检查响应头部中是否存在 "Set-Cookie" 字段
-                                Headers headers = response.headers();
-                                List<String> cookies = headers.values("Set-Cookie");
-                                if(!cookies.isEmpty()){
-                                    String s = cookies.get(0);
-                                    System.out.println("cookie  " + s);
-                                    String sessionCookie;
-                                    if (s != null) {
-                                        // 在这里处理获取到的会话信息
-                                        // sessionCookie 变量中存储了服务器返回的会话信息
-                                        // 可以将其存储在本地，后续的请求可以携带这个会话信息
-                                        sessionCookie = s.substring(0, s.indexOf(";"));
-                                        sharedPreferencesManager.setKEY_Session_ID(sessionCookie);
-                                    } else {
-                                        // 服务器没有返回会话信息
-                                        // 可能是未登录状态或者会话已经过期
-                                    }
-                                    int day_count= responseJson.getInt("day_count");
-                                    countingDays(day_count);
-                                    // 处理获取到的天数数据
-                                    System.out.println("天数：" + day_count);
+
+                        // 在这里处理响应数据，例如更新 UI 或者执行其他操作
+                        if (code == 0) {
+                            // 处理成功的情况
+                            // 获取 "data" 对象
+                            JSONObject data = responseJson.getJSONObject("data");
+
+                            // 提取需要的数据
+                            sharedPreferencesManager.setUsername(data.optString("user_name", ""));
+                            sharedPreferencesManager.setUserSignature(data.optString("user_signature", ""));
+                            sharedPreferencesManager.setUser_daysDifference(data.optInt("daysDifference", 0));
+
+                            // 更新 UI，确保在主线程更新 UI
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    usernameTextView.setText(sharedPreferencesManager.getUsername());
+                                    signatureTextView.setText(sharedPreferencesManager.getUSERSignature());
+                                    days.setText(String.format("结识Seren%d天", sharedPreferencesManager.getUser_daysDifference()));
                                 }
-                                setData(responseJson);
-                            //用户名存储
+                            });
+                        } else {
+                            // 处理其他情况
+                            // ...
                         }
-                        // 记得关闭响应体
+                    } catch (JSONException e) {
+                        // 处理JSON解析错误
+                        e.printStackTrace();
+                    } finally {
+                        // 关闭响应体
                         responseBody.close();
-                    } else {
-                        // 请求失败，处理错误
-                        System.out.println("Request failed");
                     }
-                } catch (IOException e) {
-                    showRequestFailedDialog("网络请求失败");
-                    e.printStackTrace();
+                } else {
+                    // 处理非成功响应，例如处理HTTP状态码4xx或5xx
+                    // ...
+                }
+            }
+
+            @Override
+            public void onFailure(Call call, IOException e) {
+                // 处理请求失败，例如网络问题等
+                e.printStackTrace();
+            }
+        });
+    }
+
+    // 修改个人信息
+    private void sendEditRequest(String newName, String newSignature) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                String Url = url + "/user/updateProfile";
+
+                // 创建请求体
+                MediaType JSON = MediaType.parse("application/json;charset=utf-8");
+                JSONObject json = new JSONObject();
+                try {
+                    json.put("uid", sharedPreferencesManager.getUserID());
+                    json.put("uname", newName);
+                    json.put("signature", newSignature);
                 } catch (JSONException e) {
                     throw new RuntimeException(e);
                 }
+
+                //创建一个OkHttpClient对象
+                OkHttpClient okHttpClient = new OkHttpClient();
+                RequestBody requestBody = RequestBody.create(JSON, String.valueOf(json));
+                Request request = new Request.Builder()
+                        .url(Url)
+                        .post(requestBody)
+                        .build();
+
+                // 发送请求并获取响应
+                // 异步执行HTTP请求
+                okHttpClient.newCall(request).enqueue(new Callback() {
+                    @Override
+                    public void onResponse(Call call, Response response) throws IOException {
+                        if (response.isSuccessful()) {
+
+                            // 获取响应体
+                            ResponseBody responseBody = response.body();
+                            try {
+                                // 处理响应数据
+                                String responseData = responseBody.string();
+                                JSONObject responseJson = new JSONObject(responseData);
+                                // 提取键为"code"的值
+                                int code = responseJson.getInt("code");
+
+                                // 在这里处理响应数据，例如更新 UI 或者执行其他操作
+                                // 这里可以根据返回的数据 code 值来决定如何处理数据
+                                if (code == 0) {
+                                    // 处理成功的情况
+                                    sharedPreferencesManager.setUsername(newName);
+                                    sharedPreferencesManager.setUserSignature(newSignature);
+                                } else {
+                                    // 处理其他情况
+                                    // ...
+                                }
+
+                            } catch (JSONException e) {
+                                // 处理JSON解析错误
+                                e.printStackTrace();
+                            } finally {
+                                // 关闭响应体
+                                responseBody.close();
+                            }
+                        } else {
+                            // 处理非成功响应，例如处理HTTP状态码4xx或5xx
+                            // ...
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call call, IOException e) {
+                        // 处理请求失败，例如网络问题等
+                        e.printStackTrace();
+                    }
+                });
             }
         }).start();
     }
@@ -221,14 +295,5 @@ public class InfoActivity extends AppCompatActivity {
                         .show();
             }
         });
-    }
-    private void setData(JSONObject responseJson) throws JSONException {
-        // 提取键为"data"的值
-        JSONObject dataJson = responseJson.getJSONObject("data");
-        System.out.println(dataJson);
-        String yonghuming = dataJson.optString("yonghuming", "");
-        String signature = dataJson.optString("signature", "");
-        sharedPreferencesManager.setUserSignature(signature);
-        sharedPreferencesManager.setUserYonghuming(yonghuming);
     }
 }
