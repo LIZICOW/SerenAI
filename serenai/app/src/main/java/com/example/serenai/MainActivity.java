@@ -15,8 +15,12 @@ import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.widget.SeekBar;
 
+import androidx.core.app.ActivityCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.example.serenai.iflytek.voicedemo.TtsDemo;
+
 
 // ...
 
@@ -96,8 +100,37 @@ public class MainActivity extends AppCompatActivity {
                 // 当停止拖动SeekBar时触发
             }
         });
+
+        initSpeech();
+        requestPermissions();
+        
     }
 
+    private void initSpeech() {
+        String buf = "当前APPID为：" +
+                getString(R.string.app_id) + "\n";
+        // 语音合成
+        findViewById(R.id.ttsBtn).setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, TtsDemo.class));
+        });
+    }
+
+    private void requestPermissions() {
+        try {
+            if (Build.VERSION.SDK_INT >= 23) {
+                ActivityCompat.requestPermissions(this, new String[]{
+                        android.Manifest.permission.RECORD_AUDIO
+                }, 0x0010);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
     //
     public void onMoreClick(View view) {
         // 获取当前侧滑菜单状态
