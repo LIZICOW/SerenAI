@@ -35,8 +35,6 @@ public class InfoActivity extends AppCompatActivity {
    private EditText signatureEditText;
    private TextView days;
 
-   private int daysDifference;
-
     @SuppressLint("DefaultLocale")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +49,7 @@ public class InfoActivity extends AppCompatActivity {
         sharedPreferencesManager = new SharedPreferencesManager(this);
         getInfo();
 
-//        countingDays(daysDifference);
+        //countingDays(daysDifference);
         //sendEditRequest(setName(),setSignature());
         usernameEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
