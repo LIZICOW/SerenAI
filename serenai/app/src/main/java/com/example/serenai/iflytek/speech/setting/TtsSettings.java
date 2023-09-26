@@ -16,7 +16,7 @@ import com.example.serenai.R;
  */
 public class TtsSettings extends PreferenceActivity implements OnPreferenceChangeListener {
 
-    public static final String PREFER_NAME = "com.iflytek.setting";
+    public static final String PREFER_NAME = "com.example.serenai.iflytek.setting";
     private EditTextPreference mSpeedPreference;
     private EditTextPreference mPitchPreference;
     private EditTextPreference mVolumePreference;

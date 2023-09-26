@@ -1,4 +1,4 @@
-#Tue Sep 26 14:30:19 CST 2023
+#Tue Sep 26 23:20:59 CST 2023
 base.0=C\:\\FakeD\\SerenAI\\SpeechRegn\\speechRegn\\sample\\speechDemo\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -20,6 +20,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.serenai.iflytek.voicedemo.IatDemo;
 import com.example.serenai.iflytek.voicedemo.TtsDemo;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
@@ -116,6 +117,9 @@ public class MainActivity extends AppCompatActivity {
         // 语音合成
         findViewById(R.id.ttsBtn).setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, TtsDemo.class));
+        });
+        findViewById(R.id.iatBtn).setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, IatDemo.class));
         });
     }
 
