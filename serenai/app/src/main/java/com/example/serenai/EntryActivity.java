@@ -7,10 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 
 public class EntryActivity extends AppCompatActivity {
-
+    private SharedPreferencesManager sharedPreferencesManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        sharedPreferencesManager = new SharedPreferencesManager(this);
+        if (sharedPreferencesManager.isLoggedIn()){
+            Intent intent = new Intent(EntryActivity.this, MainActivity.class);
+            startActivity(intent); // 启动 LoginActivity
+            // 关闭当前活动
+            finish();
+        }
         setContentView(R.layout.activity_entry);
     }
 

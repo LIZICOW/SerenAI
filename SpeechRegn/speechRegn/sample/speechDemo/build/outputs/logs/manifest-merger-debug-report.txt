@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
-INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
-INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
-INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\3284ae09c1513edd44ae4c8d8e9b9128\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\15389\.gradle\caches\transforms-3\ea1662c32d3ff65527ec492dacf54091\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\58746da80968fd4fa14f0a407845c6a3\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -43,41 +43,41 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\15389\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\15389\.gradle\caches\transforms-3\33e31902447c8631afd1c48d6b7ca5a7\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\09f5b8e7b386b4382c4effbca953f7d5\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\8d2e55e6c08849fd314e3e00010d8cb4\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
-INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
-INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:2:1-91:12
 	package
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:3:5-36
-		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
-		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:3:5-36
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:5:5-40
-		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
-		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:5:5-40
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
-		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:7:5-67
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:7:22-64
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:8:5-71
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:8:5-71
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:8:22-68
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:8:22-68
 uses-permission#android.permission.CAMERA
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:9:5-65
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:9:5-65
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:9:22-62
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:9:22-62
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:10:5-75
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:10:5-75
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:10:22-72
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:10:22-72
 application
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:12:5-89:19
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:12:5-89:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\15389\.gradle\caches\transforms-3\ea1662c32d3ff65527ec492dacf54091\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\15389\.gradle\caches\transforms-3\ea1662c32d3ff65527ec492dacf54091\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\15389\.gradle\caches\transforms-3\a44aaa7d5c8fa8ef4de48d9671cd78db\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
@@ -89,153 +89,153 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\15
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] C:\Users\15389\.gradle\caches\transforms-3\75b5b185d955dc7ebcd73bf352f5f50a\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:15:9-31
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:15:9-31
 	android:icon
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:13:9-38
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:13:9-38
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:14:9-33
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:14:9-33
 provider#androidx.core.content.FileProvider
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:16:9-24:20
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:16:9-24:20
 	android:grantUriPermissions
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:20:13-47
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:20:13-47
 	android:authorities
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:18:13-69
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:18:13-69
 	android:exported
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:19:13-37
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:17:13-62
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:17:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:21:13-23:54
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:21:13-23:54
 	android:resource
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:23:17-51
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:23:17-51
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:22:17-67
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:22:17-67
 activity#com.iflytek.voicedemo.MainActivity
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:26:9-37:20
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:26:9-37:20
 	android:screenOrientation
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:31:13-49
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:31:13-49
 	android:label
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:30:13-35
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:30:13-35
 	android:configChanges
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:28:13-133
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:28:13-133
 	android:icon
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:29:13-42
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:29:13-42
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:27:13-62
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:27:13-62
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:32:13-36:29
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:33:17-69
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:33:25-66
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:35:17-77
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:35:27-74
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:35:27-74
 activity#com.iflytek.speech.setting.TtsSettings
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:38:9-75
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:38:9-75
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:38:19-72
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:38:19-72
 activity#com.iflytek.speech.setting.IatSettings
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:39:9-75
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:39:9-75
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:39:19-72
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:39:19-72
 activity#com.iflytek.voicedemo.IatDemo
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:40:9-43:52
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:40:9-43:52
 	android:screenOrientation
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:43:13-49
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:43:13-49
 	android:configChanges
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:42:13-133
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:42:13-133
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:41:13-57
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:41:13-57
 activity#com.iflytek.voicedemo.AsrDemo
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:44:9-47:52
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:44:9-47:52
 	android:screenOrientation
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:47:13-49
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:47:13-49
 	android:configChanges
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:46:13-133
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:46:13-133
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:45:13-57
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:45:13-57
 activity#com.iflytek.voicedemo.TtsDemo
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:48:9-51:52
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:48:9-51:52
 	android:screenOrientation
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:51:13-49
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:51:13-49
 	android:configChanges
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:50:13-133
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:50:13-133
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:49:13-57
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:49:13-57
 activity#com.iflytek.voicedemo.IseDemo
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:52:9-55:52
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:52:9-55:52
 	android:screenOrientation
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:55:13-49
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:55:13-49
 	android:configChanges
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:54:13-133
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:54:13-133
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:53:13-57
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:53:13-57
 activity#com.iflytek.voicedemo.faceonline.OnlineFaceDemo
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:56:9-59:52
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:56:9-59:52
 	android:screenOrientation
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:59:13-49
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:59:13-49
 	android:configChanges
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:58:13-133
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:58:13-133
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:57:13-75
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:57:13-75
 activity#com.iflytek.voicedemo.IdentifyGroup.GroupManagerActivity
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:60:9-63:52
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:60:9-63:52
 	android:screenOrientation
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:63:13-49
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:63:13-49
 	android:configChanges
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:62:13-133
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:62:13-133
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:61:13-84
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:61:13-84
 activity#com.iflytek.voicedemo.IdentifyGroup.FaceIdentifyActivity
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:64:9-67:52
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:64:9-67:52
 	android:screenOrientation
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:67:13-49
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:67:13-49
 	android:configChanges
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:66:13-133
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:66:13-133
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:65:13-84
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:65:13-84
 activity#com.iflytek.voicedemo.IdentifyGroup.ResultIdentifyActivity
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:68:9-71:52
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:68:9-71:52
 	android:screenOrientation
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:71:13-49
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:71:13-49
 	android:configChanges
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:70:13-133
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:70:13-133
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:69:13-86
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:69:13-86
 activity#com.iflytek.speech.setting.IseSettings
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:72:9-75:52
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:72:9-75:52
 	android:screenOrientation
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:75:13-49
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:75:13-49
 	android:configChanges
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:74:13-133
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:74:13-133
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:73:13-66
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:73:13-66
 activity#com.iflytek.speech.setting.UrlSettings
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:76:9-79:52
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:76:9-79:52
 	android:screenOrientation
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:79:13-49
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:79:13-49
 	android:configChanges
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:78:13-133
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:78:13-133
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:77:13-66
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:77:13-66
 meta-data#IFLYTEK_APPKEY
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:81:9-83:42
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:81:9-83:42
 	android:value
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:83:13-29
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:83:13-29
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:82:13-42
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:82:13-42
 meta-data#IFLYTEK_CHANNEL
-ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:84:9-86:44
+ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:84:9-86:44
 	android:value
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:86:13-41
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:86:13-41
 	android:name
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml:85:13-43
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml:85:13-43
 uses-sdk
-INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
-INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\3284ae09c1513edd44ae4c8d8e9b9128\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\3284ae09c1513edd44ae4c8d8e9b9128\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\15389\.gradle\caches\transforms-3\ea1662c32d3ff65527ec492dacf54091\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
@@ -314,13 +314,13 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\15389\.gradle\caches
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\09f5b8e7b386b4382c4effbca953f7d5\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\8d2e55e6c08849fd314e3e00010d8cb4\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\15389\.gradle\caches\transforms-3\8d2e55e6c08849fd314e3e00010d8cb4\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
-INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
+INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
-		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
-		ADDED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
-		INJECTED from C:\FakeD\SerenAI\SpeechRegn\demo\sample\speechDemo\src\main\AndroidManifest.xml
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
+		ADDED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml
+		INJECTED from C:\FakeD\SerenAI\SpeechRegn\speechRegn\sample\speechDemo\src\main\AndroidManifest.xml

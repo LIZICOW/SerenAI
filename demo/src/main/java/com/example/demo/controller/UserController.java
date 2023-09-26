@@ -55,11 +55,13 @@ public class UserController {
 
             Duration duration = Duration.between(registrationTime, currentTime);
             long hoursDifference = duration.toHours(); // 计算小时差
-
+            // 将小时转换成天，不满一天的部分按一天算
+            long daysDifference = (hoursDifference + 23) / 24;
             // 构建返回结果
             Map<String, Object> resultMap = new HashMap<>();
-            resultMap.put("user", user);
-            resultMap.put("hoursDifference", hoursDifference);
+            resultMap.put("user_name", user.getUname());
+            resultMap.put("user_signature", user.getSignature());
+            resultMap.put("daysDifference", daysDifference);
 
             return Result.success(resultMap, "获取用户基本信息成功！");
         } else {

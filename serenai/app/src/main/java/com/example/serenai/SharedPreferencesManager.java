@@ -14,7 +14,8 @@ public class SharedPreferencesManager {
     private static final String KEY_IS_Youke = "isyouke";
     private static final String KEY_Session_ID = "";
     private static final String KEY_USER_Signature="signature";
-    private static final String KEY_USER_YONGHUMING="yonghuming";
+    private static final String KEY_USER_RegisterTime = "Register_time";
+    private static final String KEY_USER_DaysDifference = "daysDifference"; //账号注册天数
     private SharedPreferences sharedPreferences;
 
     public SharedPreferencesManager(Context context) {
@@ -79,10 +80,24 @@ public class SharedPreferencesManager {
         editor.putString(KEY_USER_Signature,signature);
         editor.apply();
     }
-    public String getUSERYonghuming(){return sharedPreferences.getString(KEY_USER_YONGHUMING,"");}
-    public void setUserYonghuming(String yonghuming){
+
+    public String getUser_RegisterTime(){
+        return sharedPreferences.getString(KEY_USER_RegisterTime,"");
+    }
+
+    public void logout(){
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.clear();
+        editor.apply();
+    }
+
+    public int getUser_daysDifference(){
+        return sharedPreferences.getInt(KEY_USER_DaysDifference, 0);
+    }
+
+    public void setUser_daysDifference(int daysDifference){
         SharedPreferences.Editor editor=sharedPreferences.edit();
-        editor.putString(KEY_USER_Signature,yonghuming);
+        editor.putInt(KEY_USER_DaysDifference,daysDifference);
         editor.apply();
     }
 }
