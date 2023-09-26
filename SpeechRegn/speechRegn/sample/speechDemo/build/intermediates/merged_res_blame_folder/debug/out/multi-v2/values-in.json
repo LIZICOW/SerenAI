@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\FakeD\\SerenAI\\SpeechRegn\\demo\\sample\\speechDemo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-in\\values-in.xml",
+            "outputFile": "C:\\FakeD\\SerenAI\\SpeechRegn\\speechRegn\\sample\\speechDemo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-in\\values-in.xml",
             "map": [
                 {
                     "source": "C:\\Users\\15389\\.gradle\\caches\\transforms-3\\a428acea1e53785af0d13a3b2477c96d\\transformed\\appcompat-1.2.0\\res\\values-in\\values-in.xml",

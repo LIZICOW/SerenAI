@@ -2,6 +2,7 @@ package com.example.serenai;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
@@ -20,6 +21,8 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.serenai.iflytek.voicedemo.TtsDemo;
+import com.iflytek.cloud.SpeechConstant;
+import com.iflytek.cloud.SpeechUtility;
 
 
 // ...
@@ -42,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        SpeechUtility.createUtility(this, SpeechConstant.APPID + "=" + getString(R.string.app_id));
         drawerLayout = findViewById(R.id.drawer_layout);
         audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         volume = findViewById(R.id.volumeSeekBar);
@@ -119,7 +123,8 @@ public class MainActivity extends AppCompatActivity {
         try {
             if (Build.VERSION.SDK_INT >= 23) {
                 ActivityCompat.requestPermissions(this, new String[]{
-                        android.Manifest.permission.RECORD_AUDIO
+                        android.Manifest.permission.RECORD_AUDIO,
+                        Manifest.permission.CAMERA
                 }, 0x0010);
             }
         } catch (Exception e) {
