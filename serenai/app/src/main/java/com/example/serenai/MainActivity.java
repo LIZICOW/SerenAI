@@ -121,6 +121,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.iatBtn).setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, IatDemo.class));
         });
+        findViewById(R.id.talk_deeply).setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, TalkActivity.class));
+        });
     }
 
     private void requestPermissions() {
