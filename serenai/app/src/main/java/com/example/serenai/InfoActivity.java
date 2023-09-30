@@ -292,6 +292,14 @@ public class InfoActivity extends AppCompatActivity {
             }
         }).start();
     }
+    // 处理返回逻辑
+    public void onInfoBackClick(View view) {
+        // 创建一个 Intent，将当前 Activity 与目标 InfoActivity 关联
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent); // 启动 MainActivity
+        // 关闭当前活动
+        finish();
+    }
     private void showRequestFailedDialog(String str) {
         runOnUiThread(new Runnable() {
             @Override
