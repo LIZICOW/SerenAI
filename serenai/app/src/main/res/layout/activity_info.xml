@@ -62,18 +62,31 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="23dp"
             app:srcCompat="@drawable/info_diary_preference" />
-        <ImageView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/settings"
-            app:srcCompat="@drawable/info_acntmanage"
-            android:layout_marginTop="27dp" />
-           <ImageView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:id="@+id/logoff"
-               app:srcCompat="@drawable/info_logoff"
-               android:onClick="onLogOffClick" />
+            android:text="@string/account_safe"
+            android:textSize="16sp"
+            android:textColor="#006A7A"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting"
+            android:textSize="16sp"
+            android:textColor="#006A7A"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logoff"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:onClick="onLogOffClick"
+            />
     </LinearLayout>
 
     <RelativeLayout
@@ -94,10 +107,11 @@
             android:inputType="text" />
         <TextView
             android:id="@+id/usernameTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="72dp"
+            android:layout_height="32dp"
             android:text="@string/username"
             android:textColor="#003C45"
+            android:gravity="center_horizontal"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
@@ -114,7 +128,7 @@
        app:layout_constraintTop_toTopOf="parent">
        <EditText
            android:id="@+id/signatureEditText"
-           android:layout_width="120dp"
+           android:layout_width="130dp"
            android:layout_height="27dp"
            android:background="@android:color/transparent"
            android:inputType="text"
@@ -123,9 +137,10 @@
            app:layout_constraintTop_toTopOf="parent" />
        <TextView
            android:id="@+id/signatureTextView"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
+           android:layout_width="130dp"
+           android:layout_height="27dp"
            android:text="@string/signature"
+           android:gravity="center_horizontal"
            android:textSize="20sp"
            android:visibility="visible"
            android:textColor="#004752"

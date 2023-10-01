@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
@@ -57,10 +58,9 @@ public class InfoActivity extends AppCompatActivity {
         signatureTextView=findViewById(R.id.signatureTextView);
         days=findViewById(R.id.days);
         sharedPreferencesManager = new SharedPreferencesManager(this);
+        sendEditRequest(setName(),setSignature());
         getInfo();
-
         //countingDays(daysDifference);
-        //sendEditRequest(setName(),setSignature());
         usernameEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
@@ -109,7 +109,7 @@ public class InfoActivity extends AppCompatActivity {
                 } else {
                     usernameTextView.setVisibility(View.VISIBLE);
                 }
-                usernameTextView.setText(charSequence.toString());
+                //usernameTextView.setText(charSequence.toString());
             }
 
             @Override
@@ -117,9 +117,6 @@ public class InfoActivity extends AppCompatActivity {
                 //文本变化后的回调，不需要处理
             }
         });
-
-
-
         return usernameTextView.getText().toString();
     }
     public String setSignature(){
@@ -136,7 +133,7 @@ public class InfoActivity extends AppCompatActivity {
                 } else {
                     signatureTextView.setVisibility(View.VISIBLE);
                 }
-                signatureTextView.setText(charSequence.toString());
+                //signatureTextView.setText(charSequence.toString());
             }
 
             @Override
@@ -187,7 +184,9 @@ public class InfoActivity extends AppCompatActivity {
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
+                                    usernameTextView.setGravity(Gravity.CENTER_HORIZONTAL);
                                     usernameTextView.setText(sharedPreferencesManager.getUsername());
+                                    signatureTextView.setGravity(Gravity.CENTER_HORIZONTAL);
                                     signatureTextView.setText(sharedPreferencesManager.getUSERSignature());
                                     days.setText(String.format("结识Seren%d天", sharedPreferencesManager.getUser_daysDifference()));
                                 }
@@ -208,7 +207,6 @@ public class InfoActivity extends AppCompatActivity {
                     // ...
                 }
             }
-
             @Override
             public void onFailure(Call call, IOException e) {
                 // 处理请求失败，例如网络问题等
@@ -216,7 +214,6 @@ public class InfoActivity extends AppCompatActivity {
             }
         });
     }
-
     // 修改个人信息
     private void sendEditRequest(String newName, String newSignature) {
         new Thread(new Runnable() {
@@ -300,17 +297,4 @@ public class InfoActivity extends AppCompatActivity {
         // 关闭当前活动
         finish();
     }
-    private void showRequestFailedDialog(String str) {
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                AlertDialog.Builder builder = new AlertDialog.Builder(InfoActivity.this);
-                builder.setTitle("注意")
-                        .setMessage(str)
-                        .setPositiveButton("确定", null)
-                        .show();
-            }
-        });
-    }
-
 }
