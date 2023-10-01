@@ -67,7 +67,9 @@
             android:layout_alignParentRight="true"
             android:layout_marginBottom="-54dp"
             android:layout_marginRight="-54dp"
-            android:src="@drawable/main_rightbottom" />
+            android:src="@drawable/main_rightbottom"
+            android:onClick="onDailyInteractionClick"
+            />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

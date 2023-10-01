@@ -205,6 +205,11 @@ public class MainActivity extends AppCompatActivity {
         // 关闭当前活动
         finish();
     }
+    public  void onDailyInteractionClick(View view){
+        Intent intent=new Intent(MainActivity.this,DailyInteractionActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
 
 }

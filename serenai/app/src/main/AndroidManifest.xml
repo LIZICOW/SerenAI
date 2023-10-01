@@ -63,6 +63,8 @@
         <activity
             android:name=".TalkActivity"
             android:exported="false" />
+        <activity android:name=".DailyInteractionActivity"
+            android:exported="false"/>
         <activity
             android:name=".SplashActivity"
             android:exported="true">
