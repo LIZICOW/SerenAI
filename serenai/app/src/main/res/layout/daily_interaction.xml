@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".DailyInteractionActivity">
 
+    <RelativeLayout
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/main"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,6 +45,7 @@
         app:srcCompat="@drawable/daily_interaction_icon"
         android:onClick="onMainClick"
         />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
