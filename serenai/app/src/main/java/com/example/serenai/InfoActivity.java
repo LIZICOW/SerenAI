@@ -58,7 +58,7 @@ public class InfoActivity extends AppCompatActivity {
         signatureTextView=findViewById(R.id.signatureTextView);
         days=findViewById(R.id.days);
         sharedPreferencesManager = new SharedPreferencesManager(this);
-        sendEditRequest(setName(),setSignature());
+//        sendEditRequest(setName(),setSignature());
         getInfo();
         //countingDays(daysDifference);
         usernameEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
@@ -215,80 +215,80 @@ public class InfoActivity extends AppCompatActivity {
         });
     }
     // 修改个人信息
-    private void sendEditRequest(String newName, String newSignature) {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                String Url = url + "/user/updateProfile";
-
-                // 创建请求体
-                MediaType JSON = MediaType.parse("application/json;charset=utf-8");
-                JSONObject json = new JSONObject();
-                try {
-                    json.put("uid", sharedPreferencesManager.getUserID());
-                    json.put("uname", newName);
-                    json.put("signature", newSignature);
-                } catch (JSONException e) {
-                    throw new RuntimeException(e);
-                }
-
-                //创建一个OkHttpClient对象
-                OkHttpClient okHttpClient = new OkHttpClient();
-                RequestBody requestBody = RequestBody.create(JSON, String.valueOf(json));
-                Request request = new Request.Builder()
-                        .url(Url)
-                        .post(requestBody)
-                        .build();
-
-                // 发送请求并获取响应
-                // 异步执行HTTP请求
-                okHttpClient.newCall(request).enqueue(new Callback() {
-                    @Override
-                    public void onResponse(Call call, Response response) throws IOException {
-                        if (response.isSuccessful()) {
-
-                            // 获取响应体
-                            ResponseBody responseBody = response.body();
-                            try {
-                                // 处理响应数据
-                                String responseData = responseBody.string();
-                                JSONObject responseJson = new JSONObject(responseData);
-                                // 提取键为"code"的值
-                                int code = responseJson.getInt("code");
-
-                                // 在这里处理响应数据，例如更新 UI 或者执行其他操作
-                                // 这里可以根据返回的数据 code 值来决定如何处理数据
-                                if (code == 0) {
-                                    // 处理成功的情况
-                                    sharedPreferencesManager.setUsername(newName);
-                                    sharedPreferencesManager.setUserSignature(newSignature);
-                                } else {
-                                    // 处理其他情况
-                                    // ...
-                                }
-
-                            } catch (JSONException e) {
-                                // 处理JSON解析错误
-                                e.printStackTrace();
-                            } finally {
-                                // 关闭响应体
-                                responseBody.close();
-                            }
-                        } else {
-                            // 处理非成功响应，例如处理HTTP状态码4xx或5xx
-                            // ...
-                        }
-                    }
-
-                    @Override
-                    public void onFailure(Call call, IOException e) {
-                        // 处理请求失败，例如网络问题等
-                        e.printStackTrace();
-                    }
-                });
-            }
-        }).start();
-    }
+//    private void sendEditRequest(String newName, String newSignature) {
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                String Url = url + "/user/updateProfile";
+//
+//                // 创建请求体
+//                MediaType JSON = MediaType.parse("application/json;charset=utf-8");
+//                JSONObject json = new JSONObject();
+//                try {
+//                    json.put("uid", sharedPreferencesManager.getUserID());
+//                    json.put("uname", newName);
+//                    json.put("signature", newSignature);
+//                } catch (JSONException e) {
+//                    throw new RuntimeException(e);
+//                }
+//
+//                //创建一个OkHttpClient对象
+//                OkHttpClient okHttpClient = new OkHttpClient();
+//                RequestBody requestBody = RequestBody.create(JSON, String.valueOf(json));
+//                Request request = new Request.Builder()
+//                        .url(Url)
+//                        .post(requestBody)
+//                        .build();
+//
+//                // 发送请求并获取响应
+//                // 异步执行HTTP请求
+//                okHttpClient.newCall(request).enqueue(new Callback() {
+//                    @Override
+//                    public void onResponse(Call call, Response response) throws IOException {
+//                        if (response.isSuccessful()) {
+//
+//                            // 获取响应体
+//                            ResponseBody responseBody = response.body();
+//                            try {
+//                                // 处理响应数据
+//                                String responseData = responseBody.string();
+//                                JSONObject responseJson = new JSONObject(responseData);
+//                                // 提取键为"code"的值
+//                                int code = responseJson.getInt("code");
+//
+//                                // 在这里处理响应数据，例如更新 UI 或者执行其他操作
+//                                // 这里可以根据返回的数据 code 值来决定如何处理数据
+//                                if (code == 0) {
+//                                    // 处理成功的情况
+//                                    sharedPreferencesManager.setUsername(newName);
+//                                    sharedPreferencesManager.setUserSignature(newSignature);
+//                                } else {
+//                                    // 处理其他情况
+//                                    // ...
+//                                }
+//
+//                            } catch (JSONException e) {
+//                                // 处理JSON解析错误
+//                                e.printStackTrace();
+//                            } finally {
+//                                // 关闭响应体
+//                                responseBody.close();
+//                            }
+//                        } else {
+//                            // 处理非成功响应，例如处理HTTP状态码4xx或5xx
+//                            // ...
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onFailure(Call call, IOException e) {
+//                        // 处理请求失败，例如网络问题等
+//                        e.printStackTrace();
+//                    }
+//                });
+//            }
+//        }).start();
+//    }
     // 处理返回逻辑
     public void onInfoBackClick(View view) {
         // 创建一个 Intent，将当前 Activity 与目标 InfoActivity 关联

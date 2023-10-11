@@ -70,13 +70,6 @@
             android:src="@drawable/main_rightbottom"
             android:onClick="onDailyInteractionClick"
             />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="300dp"
-            android:layout_marginTop="200dp"
-            android:background="#00FEB4"
-            android:id="@+id/talk_deeply"/>
 
     </RelativeLayout>
 

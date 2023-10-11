@@ -6,9 +6,13 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.google.ar.core.Anchor;
@@ -20,9 +24,14 @@ import com.google.ar.sceneform.rendering.Renderable;
 import com.google.ar.sceneform.ux.ArFragment;
 import com.google.ar.sceneform.ux.BaseArFragment;
 import com.google.ar.sceneform.ux.TransformableNode;
+import com.iflytek.cloud.SpeechSynthesizer;
 
+import java.io.File;
 import java.lang.ref.WeakReference;
 import java.util.Objects;
+
+import android.text.Editable;
+import android.text.TextWatcher;
 
 public class ARActivity extends AppCompatActivity {
 
@@ -30,6 +39,10 @@ public class ARActivity extends AppCompatActivity {
     private ArFragment arCam; //object of ArFragment Class
 
     private int clickNo = 0; //helps to render the 3d model only once when we tap the screen
+
+    private SpeechRecognition sr;
+
+    private EditText editText;
 
     public static boolean checkSystemSupport(Activity activity) {
 
@@ -85,6 +98,12 @@ public class ARActivity extends AppCompatActivity {
 
             });
 
+
+            // 获取对EditText的引用
+            editText = findViewById(R.id.editText);
+
+            // 使用getText().toString()方法获取EditText中的文本
+            String editTextContent = editText.getText().toString();
         } else {
 
             return;
@@ -106,6 +125,19 @@ public class ARActivity extends AppCompatActivity {
         model.setRenderable(modelRenderable);
         //attaching the 3d model with the TransformableNode that is already attached with the node
         model.select();
+    }
 
+    public void onBackClick(View view) {
+        // 创建一个 Intent，将当前 Activity 与目标 InfoActivity 关联
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent); // 启动 MainActivity
+        // 关闭当前活动
+        finish();
+    }
+
+    public void onTalkClick(View view)
+    {
+        sr = new SpeechRecognition(this);
+        sr.startRecognition();
     }
 }

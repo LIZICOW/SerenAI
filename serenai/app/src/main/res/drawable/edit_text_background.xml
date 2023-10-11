@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置背景颜色 -->
+    <solid android:color="#e5e5e5" />
+
+    <!-- 设置圆角大小 -->
+    <corners android:radius="8dp" />
+
+    <!-- (Optional) 可以单独设置每个角的圆角大小 -->
+    <corners
+        android:bottomLeftRadius="8dp"
+        android:bottomRightRadius="8dp"
+        android:topLeftRadius="8dp"
+        android:topRightRadius="8dp" />
+</shape>
