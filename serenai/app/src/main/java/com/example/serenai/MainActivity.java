@@ -115,12 +115,12 @@ public class MainActivity extends AppCompatActivity {
         String buf = "当前APPID为：" +
                 getString(R.string.app_id) + "\n";
         // 语音合成
-        findViewById(R.id.ttsBtn).setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, TtsDemo.class));
-        });
-        findViewById(R.id.iatBtn).setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, IatDemo.class));
-        });
+//        findViewById(R.id.ttsBtn).setOnClickListener(v -> {
+//            startActivity(new Intent(MainActivity.this, TtsDemo.class));
+//        });
+//        findViewById(R.id.iatBtn).setOnClickListener(v -> {
+//            startActivity(new Intent(MainActivity.this, IatDemo.class));
+//        });
         findViewById(R.id.talk_deeply).setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, TalkActivity.class));
         });
