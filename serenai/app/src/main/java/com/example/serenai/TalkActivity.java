@@ -50,6 +50,7 @@ import java.io.InputStream;
 import java.io.RandomAccessFile;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -254,10 +255,12 @@ public class TalkActivity extends Activity implements OnClickListener {
     private void printResult(RecognizerResult results) {
         String text = JsonParser.parseIatResult(results.getResultString());
         String sn = null;
+        boolean ls = false;
         // 读取json结果中的sn字段
         try {
             JSONObject resultJson = new JSONObject(results.getResultString());
             sn = resultJson.optString("sn");
+            ls = resultJson.optBoolean("ls");
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -271,7 +274,8 @@ public class TalkActivity extends Activity implements OnClickListener {
         mResultText.setText(resultBuffer.toString());
         mResultText.setSelection(mResultText.length());
         result = resultBuffer.toString();
-        getAnswer();
+        if (ls)
+            getAnswer();
     }
     private RecognizerListener mRecognizerListener = new RecognizerListener() {
 
@@ -374,13 +378,16 @@ public class TalkActivity extends Activity implements OnClickListener {
 
     protected void getAnswer(){
         String url = "http://1.15.66.98:8081/api";
-        OkHttpClient okHttpClient = new OkHttpClient();
+        OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                .connectTimeout(30, TimeUnit.SECONDS)
+                .readTimeout(30, TimeUnit.SECONDS)
+                .build();
         String Url = url + "/sendClaudeRequest";
         String param1 = "question";
         String param2 = "conversationId";
         RequestBody requestBody = new FormBody.Builder()
                 .add(param1, result)
-                .add(param2, "323")
+                .add(param2, "135")
                 .build();
         Request request = new Request.Builder()
                 .url(Url)
