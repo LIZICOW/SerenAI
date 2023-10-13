@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/entry_head"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="65dp" />
+        android:layout_marginTop="30dp" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -34,7 +34,7 @@
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="289dp"
+        android:layout_marginTop="330dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
