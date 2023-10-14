@@ -11,8 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="113dp"
+            android:layout_height="62dp"
             android:id="@+id/main_rec"
             app:srcCompat="@drawable/main_rectangle"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,8 +53,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="135dp"
+            android:layout_height="67dp"
             android:layout_marginStart="10dp"
             android:layout_alignParentBottom="true"
             android:src="@drawable/talk_deeply"
@@ -76,19 +76,19 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/more_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/main_more"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginStart="-28dp"
-            android:layout_marginTop="103dp"
-            android:onClick="onMoreClick"
-            />
 
-        </LinearLayout>
+    <ImageView
+        android:id="@+id/more_button"
+        android:layout_width="87dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/main_more"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="-28dp"
+        android:layout_marginTop="103dp"
+        android:onClick="onMoreClick"
+        />
+    </LinearLayout>
     <!--主内容区的布局代码要放在侧滑菜单布局的前面,-->
 
 
@@ -155,8 +155,8 @@
         <!--静音按钮-->
         <ImageView
             android:id="@+id/quietbutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="114dp"
+            android:layout_height="36dp"
             app:srcCompat="@drawable/main_quiet"
             android:scaleType="fitStart"
             android:adjustViewBounds="true"
@@ -230,8 +230,8 @@
         <!--设置按钮-->
         <ImageView
             android:id="@+id/drawerSetting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="22dp"
             app:srcCompat="@drawable/main_setting"
             android:scaleType="fitStart"
             android:adjustViewBounds="true"
@@ -242,8 +242,8 @@
         <!--夜间模式按钮-->
         <ImageView
             android:id="@+id/drawerNight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="84dp"
+            android:layout_height="22dp"
             app:srcCompat="@drawable/main_night"
             android:scaleType="fitStart"
             android:adjustViewBounds="true"
